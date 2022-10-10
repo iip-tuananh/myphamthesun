@@ -31,10 +31,10 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
                   <a  href="{{route('home')}}" ><span >Trang chủ</span></a>						
                   <span class="mr_lr">&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</span>
                </li>
-               <li>
+               {{-- <li>
                   <a class="changeurl"  href="{{route('allListProCate', ['danhmuc'=>$product->cate_slug])}}"><span >{{languageName($product->cate->name)}}</span></a>						
                   <span class="mr_lr">&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</span>
-               </li>
+               </li> --}}
                <li><strong><span>               {{languageName($product->name)}}
                </span></strong>
                <li>
