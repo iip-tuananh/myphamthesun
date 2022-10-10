@@ -171,10 +171,12 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
             <a href="#" title="Sản phẩm liên quan">Sản phẩm liên quan</a>
          </h2>
          <div class="owl_product_news slick_wishlist">
-            <div class="item">
+            <div class="item row">
                @foreach ($productlq as $item)
                   @if ($item->id != $product->id)
+                  <div class="col-md-3">
                      @include('layouts.product.item', ['product'=>$item])
+                  </div>
                   @endif
                @endforeach
             </div>
@@ -183,7 +185,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
    </div>
    @endif
 </section>
-<script>
+{{-- <script>
    $(document).ready(function (e) {
    	$('.slick_wishlist').slick({
    		autoplay: true,
@@ -311,5 +313,5 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
    
    
    
-</script>
+</script> --}}
 @endsection
