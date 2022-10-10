@@ -168,7 +168,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
    <div class="container">
       <div class="section_wishlist clearfix section margin-bottom-40">
          <h2 class="title_modules">
-            <a href="{{route('allListProCate', ['danhmuc'=>$product->cate_slug])}}" title="Sản phẩm liên quan">Sản phẩm liên quan</a>
+            <a href="#" title="Sản phẩm liên quan">Sản phẩm liên quan</a>
          </h2>
          <div class="owl_product_news slick_wishlist">
             <div class="item">
