@@ -5,7 +5,7 @@ $discountPrice = $product->price - $product->price * ($product->discount / 100);
 @endphp
    <div class="item_product_main clearfix">
       <div class="product-thumbnail clearfix">
-      <a class="image_thumb scale_hover" href="{{route('detailProduct', ['cate'=>$product->cate_slug, 'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">
+      <a class="image_thumb scale_hover" href="{{route('detailProduct', ['slug'=>$product->slug])}}" title="{{languageName($product->name)}}">
       <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="{{$img[0]}}" alt="{{languageName($product->name)}}">
       </a>
       {{-- <div class="action">
