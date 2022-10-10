@@ -347,7 +347,7 @@ export default {
       if(this.objData.content[0].content == '') this.errors.push('Nội dung không được để trống');
       if(this.objData.description[0].content == '') this.errors.push('Mô tả không được để trống');
       if(this.objData.images.length == 0) this.errors.push('Vui lòng chọn ảnh');
-      if(this.objData.category == 0) this.errors.push('Chọn danh mục sản phẩm');
+      // if(this.objData.category == 0) this.errors.push('Chọn danh mục sản phẩm');
       if (this.errors.length > 0) {
         this.errors.forEach((value, key) => {
           this.$error(value);
