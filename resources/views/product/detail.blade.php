@@ -174,7 +174,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
             <div class="item row">
                @foreach ($productlq as $item)
                   @if ($item->id != $product->id)
-                  <div class="col-md-3">
+                  <div class="col-md-3 mb-4">
                      @include('layouts.product.item', ['product'=>$item])
                   </div>
                   @endif

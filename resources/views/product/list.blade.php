@@ -119,7 +119,7 @@ Danh sách {{$title}}
                   <section class="products-view products-view-grid collection_reponsive list_hover_pro">
                      <div class="row">
                         @foreach ($list as $product)
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 product-col">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 product-col mb-4">
                            @include('layouts.product.item', ['product'=>$product])
                         </div>
                         @endforeach
