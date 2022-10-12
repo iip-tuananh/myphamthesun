@@ -204,7 +204,7 @@
    </div>
 </section>
 <section class="awe-section-2">
-   <div class="section_about lazyload" data-src="{{url('frontend/images/bg-bottom-right1.png')}}">
+   <div class="section_about lazyload">
       <div class="container">
          <div class="row">
             <div class="col-md-6 col-xl-6">
