@@ -205,7 +205,7 @@
       <div class="containers">
          <!-- Menu mobile -->
          <div class="contenttop p-r-30">
-               <div class="section margin-bottom-10 margin-top-15 a-left">
+               <div class="section margin-bottom-10 margin-top-15">
                <form action="{{route('search_result')}}" method="post" class="input-group search-bar" role="search">
                   @csrf
                   <input type="text" name="keyword" value="" autocomplete="off" required placeholder="Tìm kiếm..." class="input-group-field auto-search">
@@ -276,6 +276,13 @@
                </ul>
          </div>
          <div class="p-r-30 clearfix margin-top-15">
+               <div class="cartsearch" style="margin-bottom: 20px;">
+                  <div class="carthd">
+                     <div class="mini-cart text-xs-center">
+                        <a href="javascript: void(0);" class="btn btn-success form-contact" style="border-radius: 10px;">Tư vấn</a>
+                     </div>
+                  </div>
+               </div>
                <div class="social a-left clearfix">
                <a class="tw" href="https://twitter.com" title="Theo dõi trên Twitter"><i class="fab fa-twitter"></i></a>
                <a class="fb" href="{{$setting->facebook}}" title="Theo dõi trên Facebook"><i class="fab fa-facebook-f"></i></a>
