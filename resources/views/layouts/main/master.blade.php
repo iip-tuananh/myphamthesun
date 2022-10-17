@@ -41,6 +41,7 @@
    <link href="{{asset('frontend/css/owl.theme.default.min.css')}}" rel="stylesheet" type="text/css" />
    <link href="{{asset('frontend/css/quickviews_popup_cart.scss.css')}}" rel="stylesheet" type="text/css" />
    <link href="{{asset('frontend/css/contact_style.scss.css')}}" rel="stylesheet" type="text/css" />
+   <link href="{{asset('frontend/css/callbuttom.css')}}" rel="stylesheet" type="text/css" />
    @yield('css')
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -72,7 +73,7 @@
       <div class="bodywrap clearfix">
             @yield('content')
             @include('layouts.footer.index')
-            <div class="support-online">
+            {{-- <div class="support-online">
             <div class="support-content" style="display: none;">
                <a href="tel:19006750" class="call-now" rel="nofollow">
                   <i class="fas fa-mobile-alt" aria-hidden="true"></i>
@@ -94,6 +95,50 @@
                <div class="animated infinite zoomIn kenit-alo-circle"></div>
                <div class="animated infinite pulse kenit-alo-circle-fill"></div>
             </a>
+            </div> --}}
+            <div class="hotline-phone-ring-wrap">
+               <div class="hotline-phone-ring">
+                  <div class="hotline-phone-ring-circle"></div>
+                  <div class="hotline-phone-ring-circle-fill"></div>
+                  <div class="hotline-phone-ring-img-circle">
+                  <a href="tel:{{$setting->phone1}}" class="pps-btn-img">
+                  <img src="{{url('frontend/images/icon-call.png')}}" alt="Gọi điện thoại" width="50" loading="lazy">
+                  </a>
+                  </div>
+               </div>
+            </div>
+            <div class="hotline-phone-ring-wrap2">
+               <div class="hotline-phone-ring">
+                  <div class="hotline-phone-ring-circle"></div>
+                  <div class="hotline-phone-ring-circle-fill"></div>
+                  <div class="hotline-phone-ring-img-circle">
+                  <a href="https://zalo.me/{{$setting->phone1}}" class="pps-btn-img" target="_blank">
+                  <img src="{{url('frontend/images/icon-zalo.png')}}" alt="Chat zalo" width="50" loading="lazy">
+                  </a>
+                  </div>
+               </div>
+            </div>
+            <div class="hotline-phone-ring-wrap3">
+               <div class="hotline-phone-ring">
+                  <div class="hotline-phone-ring-circle"></div>
+                  <div class="hotline-phone-ring-circle-fill"></div>
+                  <div class="hotline-phone-ring-img-circle">
+                  <a href="{{$setting->google}}" class="pps-btn-img" target="_blank">
+                  <img src="{{url('frontend/images/icon-mess.png')}}" alt="Chat messenger" width="50" loading="lazy">
+                  </a>
+                  </div>
+               </div>
+            </div>
+            <div class="hotline-phone-ring-wrap4">
+               <div class="hotline-phone-ring">
+                  <div class="hotline-phone-ring-circle"></div>
+                  <div class="hotline-phone-ring-circle-fill"></div>
+                  <div class="hotline-phone-ring-img-circle">
+                  <a href="{{$setting->GA}}" class="pps-btn-img" target="_blank">
+                  <img src="{{url('frontend/images/icon-youtube.png')}}" alt="Xem youtube" width="50" loading="lazy">
+                  </a>
+                  </div>
+               </div>
             </div>
       </div>
       <div class="modal-combo">
