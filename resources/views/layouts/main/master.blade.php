@@ -17,18 +17,19 @@
    <meta property="og:title" content="@yield('title')" />
    <meta property="og:description" content="@yield('description')" />
    <meta property="og:url" content="{{url()->current()}}" />
-   <meta property="og:site_name" content="ahometh.vn" />
+   <meta property="og:site_name" content="{{url()->current()}}" />
    <meta property="og:updated_time" content="2021-08-28T22:06:30+07:00" />
    <meta property="og:image" content="@yield('image')" />
    <meta property="og:image:secure_url" content="@yield('image')" />
    <meta property="og:image:width" content="598" />
    <meta property="og:image:height" content="333" />
-   <meta property="og:image:alt" content="ahome-noi-that" />
+   <meta property="og:image:alt" content="my-pham-thesun" />
    <meta property="og:image:type" content="image/jpeg" />
    <meta name="twitter:card" content="summary_large_image" />
    <meta name="twitter:title" content="@yield('title')" />
    <meta name="twitter:description" content="@yield('description')" />
    <meta name="twitter:image" content="@yield('image')" />
+   <meta name="google-site-verification" content="1bO0m2dF-em6mvlD_4RVSM_DW7eVQgXVfsdjGCBc8y0" />
    <!-- Fav Icon -->
    <link rel="icon" href="{{url(''.$setting->favicon)}}" type="image/x-icon">
    <link rel="preload" as='style' type="text/css" href="{{asset('frontend/css/main.scss.css')}}">
